@@ -13,7 +13,7 @@ export default function Users() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("/api/admin/users");
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/admin/users`);
         const data = await response.json();
         if (response.ok) {
           setUsers(data.users);
@@ -34,7 +34,7 @@ export default function Users() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/admin/users", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/admin/users`, {
         method: editingUser ? "PUT" : "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(editingUser ? { ...form, id: editingUser._id } : form),
@@ -68,7 +68,7 @@ export default function Users() {
   const handleDelete = async (userId) => {
     if (!confirm("Are you sure you want to delete this user?")) return;
     try {
-      const response = await fetch(`/api/admin/users/${userId}`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/admin/users/${userId}`, {
         method: "DELETE",
       });
       if (response.ok) {

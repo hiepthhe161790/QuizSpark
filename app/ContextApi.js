@@ -68,7 +68,6 @@ export function ContextProvider({ children }) {
         }
 
         const userData = await response.json();
-        console.log(userData);
 
         setUser(userData.user);
       } catch (error) {

@@ -23,7 +23,7 @@ export default function ProfilePage() {
       const token = localStorage.getItem("token");
       if (!token) return;
 
-      const response = await fetch("/api/auth/profile", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/profile`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -39,7 +39,7 @@ export default function ProfilePage() {
     const token = localStorage.getItem("token");
     if (!token) return;
 
-    const response = await fetch("/api/admin/users", {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/admin/users`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -75,7 +75,7 @@ export default function ProfilePage() {
     const token = localStorage.getItem("token");
     if (!token) return;
 
-    const response = await fetch("/api/admin/users", {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/admin/users`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

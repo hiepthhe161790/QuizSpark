@@ -43,7 +43,7 @@ function QuizStartQuestions({ onUpdateTime }) {
       const id = selectQuizToStart._id;
       // Get the _id of the quiz
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}api/quizzes?id=${id}`, // Include the id as a query parameter
+        `${process.env.NEXT_PUBLIC_API_URL}/api/quizzes?id=${id}`, // Include the id as a query parameter
         {
           method: 'PUT',
           headers: {
@@ -233,7 +233,7 @@ function QuizStartQuestions({ onUpdateTime }) {
 
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}api/user?id=${userCopy._id}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/user?id=${userCopy._id}`,
         {
           method: 'PUT',
           headers: {

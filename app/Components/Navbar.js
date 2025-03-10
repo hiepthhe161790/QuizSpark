@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import useGlobalContextProvider from '../ContextApi';
 import { useRouter } from 'next/navigation';
@@ -8,41 +8,46 @@ import { Toaster, toast } from "react-hot-toast";
 function Navbar() {
   const { userObject } = useGlobalContextProvider();
   const { user, setUser } = userObject;
-  const [isLoading, setIsLoading] = useState(false);
   const [isUserLoading, setIsUserLoading] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
   const router = useRouter();
 
-  const fetchUser = useCallback(async (token) => {
+  useEffect(() => {
+    if (user) {
+      setIsUserLoading(false);
+    } else {
+      const token = localStorage.getItem('token');
+      if (token) {
+        fetchUser(token);
+      } else {
+        setIsUserLoading(false);
+      }
+    }
+  }, [user]);
+
+  async function fetchUser(token) {
     try {
-      const response = await fetch('/api/auth/profile', {
-        headers: { Authorization: `Bearer ${token}` },
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/profile`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       });
 
-      const data = await response.json();
-      if (response.ok) {
-        setUser(data.user);
-      } else {
-        setUser(null);
+      if (!response.ok) {
+        toast.error('Something went wrong...');
+        throw new Error('fetching failed...');
       }
+
+      const userData = await response.json();
+      setUser(userData.user);
     } catch (error) {
-      setUser(null);
+      console.log(error);
     } finally {
       setIsUserLoading(false);
     }
-  }, [setUser]);
-
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      fetchUser(token);
-    } else {
-      setIsUserLoading(false);
-    }
-  }, [fetchUser]);
+  }
 
   async function handleLogout() {
-    setIsLoading(true);
     const token = localStorage.getItem('token');
 
     try {
@@ -62,8 +67,6 @@ function Navbar() {
       }
     } catch (error) {
       toast.error("Có lỗi xảy ra khi đăng xuất!");
-    } finally {
-      setIsLoading(false);
     }
   }
 

@@ -18,7 +18,7 @@ function HistoryPage() {
   useEffect(() => {
     const fetchUserQuizzes = async () => {
       try {
-        const response = await fetch('/api/user-quiz/history', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/user-quiz/history`, {
           headers: { 'user-id': user._id },
         });
 

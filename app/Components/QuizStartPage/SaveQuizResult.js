@@ -13,7 +13,7 @@ function SaveQuizResult({ userId, quizId, score, answers }) {
 
     const saveQuizResult = async () => {
       try {
-        const response = await fetch('/api/user-quiz', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/user-quiz`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

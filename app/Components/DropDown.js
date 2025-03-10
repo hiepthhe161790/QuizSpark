@@ -74,11 +74,11 @@ function DropDown(props) {
   }
 
   function handleClickedItem(menuItem) {
-    if (menuItem.name === 'Modify') {
+    if (menuItem.name === 'Sửa') {
       router.push('/quiz-build');
     }
 
-    if (menuItem.name === 'Delete') {
+    if (menuItem.name === 'Xóa') {
       setIsDialogOpened(true);
       toast(
         (t) => (

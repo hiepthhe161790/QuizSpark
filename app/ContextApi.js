@@ -26,7 +26,7 @@ export function ContextProvider({ children }) {
     const fetchAllQuizzes = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:3000/api/quizzes', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/quizzes`, {
           cache: 'no-cache',
         });
 
@@ -56,7 +56,7 @@ export function ContextProvider({ children }) {
         const token = localStorage.getItem('token');
         if (!token) return;
 
-        const response = await fetch('http://localhost:3000/api/auth/profile', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/profile`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

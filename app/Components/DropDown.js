@@ -53,7 +53,7 @@ function DropDown(props) {
     console.log(selectedQuiz._id);
 
     const res = await fetch(
-      `http://localhost:3000/api/quizzes?id=${selectedQuiz._id}`,
+      `${process.env.NEXT_PUBLIC_API_URL}api/quizzes?id=${selectedQuiz._id}`,
       {
         method: 'DELETE',
         headers: {

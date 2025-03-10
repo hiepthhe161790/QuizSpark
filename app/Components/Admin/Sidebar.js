@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FiUsers, FiSettings, FiMenu, FiX } from "react-icons/fi";
+import { FiUsers, FiSettings, FiActivity, FiMenu, FiX } from "react-icons/fi";
 import { MdDashboard } from "react-icons/md";
 import Link from "next/link";
 
@@ -26,7 +26,7 @@ export default function Sidebar() {
         {/* Menu Items */}
         <nav className="space-y-4">
           <Link
-            href="/dashboard"
+            href="/admin/dashboard"
             className="flex items-center space-x-3 text-white hover:bg-gray-700 p-3 rounded-md transition"
           >
             <MdDashboard className="text-2xl" />
@@ -34,7 +34,7 @@ export default function Sidebar() {
           </Link>
 
           <Link
-            href="/users"
+            href="/admin/users"
             className="flex items-center space-x-3 text-white hover:bg-gray-700 p-3 rounded-md transition"
           >
             <FiUsers className="text-2xl" />
@@ -42,7 +42,15 @@ export default function Sidebar() {
           </Link>
 
           <Link
-            href="/settings"
+            href="/"
+            className="flex items-center space-x-3 text-white hover:bg-gray-700 p-3 rounded-md transition"
+          >
+            <FiActivity className="text-2xl" />
+            {isOpen && <span>Quizzes</span>}
+          </Link>
+
+          <Link
+            href="/admin/settings"
             className="flex items-center space-x-3 text-white hover:bg-gray-700 p-3 rounded-md transition"
           >
             <FiSettings className="text-2xl" />

@@ -41,7 +41,7 @@ function DropDown(props) {
     return () => {
       document.removeEventListener('click', handleOutiseClick);
     };
-  }, [isDialogOpened, setDropDownToggle, setSelectedQuiz]);
+  }, [dropDownToggle]);
 
   async function deleteTheQuiz() {
     const updatedAllQuizzes = allQuizzes.filter((quiz) => {

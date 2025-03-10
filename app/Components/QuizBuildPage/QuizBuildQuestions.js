@@ -136,7 +136,7 @@ function QuizBuildQuestions({ focusProp, quizQuestions, setQuizQuestions }) {
         endOfListRef.current.scrollIntoView({ behavior: 'smooth' });
       }, 100);
     }
-  }, [quizQuestions.length]);
+  }, [quizQuestions.length, focus]);
 
   useEffect(() => {
     // Focus the last textarea if it exists
@@ -147,7 +147,7 @@ function QuizBuildQuestions({ focusProp, quizQuestions, setQuizQuestions }) {
         lastTextArea.focus();
       }
     }
-  }, [quizQuestions.length]);
+  }, [quizQuestions.length, focus]);
 
   return (
     <div className="p-3 mt-6 flex justify-between border border-green-700 rounded-md relative">

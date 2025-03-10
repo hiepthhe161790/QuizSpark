@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import useGlobalContextProvider from '../ContextApi';
 import { useRouter } from 'next/navigation';
@@ -13,16 +13,7 @@ function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
   const router = useRouter();
 
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      fetchUser(token);
-    } else {
-      setIsUserLoading(false);
-    }
-  }, []);
-
-  async function fetchUser(token) {
+  const fetchUser = useCallback(async (token) => {
     try {
       const response = await fetch('/api/auth/profile', {
         headers: { Authorization: `Bearer ${token}` },
@@ -39,7 +30,16 @@ function Navbar() {
     } finally {
       setIsUserLoading(false);
     }
-  }
+  }, [setUser]);
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      fetchUser(token);
+    } else {
+      setIsUserLoading(false);
+    }
+  }, [fetchUser]);
 
   async function handleLogout() {
     setIsLoading(true);

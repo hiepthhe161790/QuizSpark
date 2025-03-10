@@ -1,5 +1,8 @@
 'use client'
 import { useEffect, useState } from 'react';
+import Navbar from './Navbar';
+import QuizzesArea from './QuizzesArea';
+import { Toaster } from 'react-hot-toast';
 function LightDark() {
     const [isDarkMode, setIsDarkMode] = useState(false);
 

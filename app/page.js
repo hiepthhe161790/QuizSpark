@@ -15,7 +15,7 @@ export default function Home() {
     setSelectQuizToStart(null);
     // set the selectedQuiz back to null
     setSelectedQuiz(null);
-  }, []);
+  }, [ setSelectQuizToStart, setSelectedQuiz]);
 
   const [openMenu, setOpenMenu] = useState(false);
 

@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "67cab10f8d3bd1e8514a6cf5"
+  },
+  "name": "Admin",
+  "isLogged": false,
+  "experience": 0,
+  "__v": 0,
+  "email": "admin@gmail.com",
+  "password": "admin",
+  "role": "admin"
+},
+{
+  "_id": {
+    "$oid": "67cab1778d3bd1e8514a6cf9"
+  },
+  "name": "Giày balenciaga",
+  "isLogged": false,
+  "experience": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cab2650a574af15202873a"
+  },
+  "name": "Hoàng",
+  "email": "hoanghiep310102@gmail.com",
+  "password": "12345678",
+  "isLogged": true,
+  "experience": 91,
+  "__v": 0,
+  "role": "admin"
+},
+{
+  "_id": {
+    "$oid": "67cab2df0a574af15202876a"
+  },
+  "name": "in",
+  "email": "hoanghiep3101021@gmail.com",
+  "password": "12345678",
+  "isLogged": false,
+  "experience": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cab2f70a574af15202876e"
+  },
+  "name": "Trương Hoàng Hiệp",
+  "email": "hoanghiep31010232@gmail.com",
+  "password": "12345678",
+  "isLogged": false,
+  "experience": 10,
+  "__v": 0
+}]

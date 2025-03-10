@@ -40,7 +40,7 @@ function SaveQuizResult({ userId, quizId, score, answers }) {
     };
 
     saveQuizResult();
-  }, [userId, quizId, score, answers]); 
+  }, [userId, quizId, score, answers, router]); 
 
   return null;
 }

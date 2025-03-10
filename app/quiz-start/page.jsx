@@ -18,7 +18,7 @@ function Page(props) {
     if (selectQuizToStart === null) {
       router.push('/');
     }
-  }, []);
+  }, [ selectQuizToStart, router ]);
 
   function onUpdateTime(currentTime) {
     setParentTimer(currentTime);

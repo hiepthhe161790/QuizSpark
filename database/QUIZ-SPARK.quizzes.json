@@ -1,0 +1,276 @@
+[{
+  "_id": {
+    "$oid": "67ca7b23f44f2d0f1717c81b"
+  },
+  "icon": "faQuestion",
+  "quizTitle": "Maths Quiz 01",
+  "quizQuestions": [
+    {
+      "id": "666b8c82-08d5-4ccf-9c20-b52fe53f5713",
+      "mainQuestion": "Random Question (Answer A)",
+      "choices": [
+        "A. efsfsdfds",
+        "B. fsdfsdf"
+      ],
+      "correctAnswer": 0,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 10,
+        "correctAttempts": 4,
+        "incorrectAttempts": 6
+      },
+      "_id": {
+        "$oid": "67ca7b23f44f2d0f1717c81c"
+      }
+    },
+    {
+      "id": "c1c86430-c1af-4a5e-b80c-6630892ffe53",
+      "mainQuestion": "Random question (Answer B)",
+      "choices": [
+        "A. fsdfsdf",
+        "B. sdfdsfsdf"
+      ],
+      "correctAnswer": 1,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 10,
+        "correctAttempts": 3,
+        "incorrectAttempts": 7
+      },
+      "_id": {
+        "$oid": "67ca7b23f44f2d0f1717c81d"
+      }
+    },
+    {
+      "id": "01a30bfd-2d2d-4d68-926d-782804cf8d1b",
+      "mainQuestion": "Random Question (Answer C)",
+      "choices": [
+        "A. fsdfsdf",
+        "B. sdfsdf"
+      ],
+      "correctAnswer": 0,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 10,
+        "correctAttempts": 2,
+        "incorrectAttempts": 8
+      },
+      "_id": {
+        "$oid": "67ca7b23f44f2d0f1717c81e"
+      }
+    }
+  ],
+  "isLocked": false,
+  "price": 0,
+  "userQuizes": [],
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "67ca7d1d6084152d430527b2"
+  },
+  "icon": "faQuestion",
+  "quizTitle": "Live Quiz",
+  "quizQuestions": [
+    {
+      "id": "22e703c8-7a79-4dc2-95fa-3fcf9b419464",
+      "mainQuestion": "Random Question  01 (Answer A)",
+      "choices": [
+        "A. dsgdfg",
+        "B. fdgdfg"
+      ],
+      "correctAnswer": 0,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 7,
+        "correctAttempts": 2,
+        "incorrectAttempts": 5
+      },
+      "_id": {
+        "$oid": "67ca7d1d6084152d430527b3"
+      }
+    },
+    {
+      "id": "b42b7eba-b672-4e45-aea0-1fe730859cf0",
+      "mainQuestion": "Random Question (Answer B)",
+      "choices": [
+        "A. fsdf",
+        "B. fsfsdf"
+      ],
+      "correctAnswer": 1,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 7,
+        "correctAttempts": 5,
+        "incorrectAttempts": 2
+      },
+      "_id": {
+        "$oid": "67ca7d1d6084152d430527b4"
+      }
+    },
+    {
+      "id": "69b19afd-4b08-4f52-9321-08ab2de98131",
+      "mainQuestion": "Random Question (Answer B)",
+      "choices": [
+        "A. rer",
+        "B. seresr"
+      ],
+      "correctAnswer": 1,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 7,
+        "correctAttempts": 6,
+        "incorrectAttempts": 1
+      },
+      "_id": {
+        "$oid": "67ca7d1d6084152d430527b5"
+      }
+    }
+  ],
+  "isLocked": false,
+  "price": 0,
+  "userQuizes": [],
+  "__v": 7
+},
+{
+  "_id": {
+    "$oid": "67ca7db403819c7c5c68656d"
+  },
+  "icon": "faQuestion",
+  "quizTitle": "Live Quiz 2",
+  "quizQuestions": [
+    {
+      "id": "f36a1682-cdd1-4c96-b3b2-05b353382889",
+      "mainQuestion": "Random Question 01 (Answer A)",
+      "choices": [
+        "A. df",
+        "B. dfgdfgdfg"
+      ],
+      "correctAnswer": 0,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 13,
+        "correctAttempts": 0,
+        "incorrectAttempts": 13
+      },
+      "_id": {
+        "$oid": "67ca7db403819c7c5c68656e"
+      }
+    },
+    {
+      "id": "ab4d3997-7d0c-44dc-a49a-21946879e37c",
+      "mainQuestion": "Random Question 01 (Answer B)",
+      "choices": [
+        "A. fsdf",
+        "B. sdfsdf"
+      ],
+      "correctAnswer": 1,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 13,
+        "correctAttempts": 7,
+        "incorrectAttempts": 6
+      },
+      "_id": {
+        "$oid": "67ca7db403819c7c5c68656f"
+      }
+    }
+  ],
+  "isLocked": false,
+  "price": 0,
+  "userQuizes": [],
+  "__v": 13
+},
+{
+  "_id": {
+    "$oid": "67caf8c46c075c2a62538310"
+  },
+  "icon": "faQuestion",
+  "quizTitle": "GD06SC001",
+  "quizQuestions": [
+    {
+      "id": "06547802-5e9e-4614-9908-957c0f803a13",
+      "mainQuestion": "පරිසරය සමන්විත වන්නේ කුමන දේවල් වලින්ද?",
+      "choices": [
+        "A. සතුන් පමණි",
+        "B. පැල පමණි",
+        "C. ගොඩබිම්, ජලය, නිවාස, ශාක, සතුන්",
+        "D. ජලය පමණි"
+      ],
+      "correctAnswer": 2,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 0,
+        "correctAttempts": 0,
+        "incorrectAttempts": 0
+      },
+      "_id": {
+        "$oid": "67caf8c46c075c2a62538311"
+      }
+    },
+    {
+      "id": "cee52880-e5d7-405b-a931-f21772c537b6",
+      "mainQuestion": "පහත සඳහන් දේවලින් පරිසරයේ සංරචකයක් නොවන්නේ කුමක්ද?",
+      "choices": [
+        "A. ගොඩබිම්",
+        "B. ජලය",
+        "C. සපත්තු",
+        "D.  සතුන්"
+      ],
+      "correctAnswer": 2,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 0,
+        "correctAttempts": 0,
+        "incorrectAttempts": 0
+      },
+      "_id": {
+        "$oid": "67caf8c46c075c2a62538312"
+      }
+    },
+    {
+      "id": "1f774f67-c5a6-4092-b206-1e440d155713",
+      "mainQuestion": "වර්ධනය යනු කුමක්ද?",
+      "choices": [
+        "A. ප්‍රමාණය වැඩි වීම",
+        "B. ප්‍රමාණයෙන් අඩු වීම",
+        "C. වර්ණය වෙනස් කිරීම",
+        "D. ජීවීන්ගේ චලනය"
+      ],
+      "correctAnswer": 0,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 0,
+        "correctAttempts": 0,
+        "incorrectAttempts": 0
+      },
+      "_id": {
+        "$oid": "67caf8c46c075c2a62538313"
+      }
+    },
+    {
+      "id": "90e350fb-6506-4744-af95-dd092de59ee6",
+      "mainQuestion": "සියලුම ක්‍ෂුද්‍ර ජීවීන්",
+      "choices": [
+        "A. විෂම පොශීන් වේ ",
+        "B. ස්වයං පොශීන් වේ",
+        "C. ජීවීන්ට හානිදායකය",
+        "D. තනිව ගත්කල පියවි ඇසට නොපෙනේ"
+      ],
+      "correctAnswer": 3,
+      "answeredResult": -1,
+      "statistics": {
+        "totalAttempts": 0,
+        "correctAttempts": 0,
+        "incorrectAttempts": 0
+      },
+      "_id": {
+        "$oid": "67caf8c46c075c2a62538314"
+      }
+    }
+  ],
+  "isLocked": false,
+  "price": 0,
+  "userQuizes": [],
+  "__v": 0
+}]

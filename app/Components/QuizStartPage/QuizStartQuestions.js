@@ -97,7 +97,14 @@ function QuizStartQuestions({ onUpdateTime }) {
         clearInterval(interval);
       }
     }
-  }, [timer]);
+  }, [ timer,
+    isQuizEnded,
+    allQuizzes,
+    currentQuestionIndex,
+    indexOfQuizSelected,
+    interval,
+    quizQuestions.length,
+    setAllQuizzes,]);
 
   // With the useEffect every time the component is loaded up
   //we need to get the index of the quiz we selected inside
@@ -118,7 +125,7 @@ function QuizStartQuestions({ onUpdateTime }) {
       });
       saveDataIntoDB();
     }
-  }, [isQuizEnded]);
+  }, [isQuizEnded, quizQuestions, saveDataIntoDB]);
 
   function selectChoiceFunction(choiceIndexClicked) {
     // update the selectedChoice variable state

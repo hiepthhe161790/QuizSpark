@@ -48,7 +48,7 @@ export default function Home() {
       {/* Navbar */}
       <Navbar />
       {/* Quizzes Area */}
-      <div className="flex ml-12">
+      <div className="flex justify-center items-center flex-grow">
       <QuizzesArea />
       </div>
       </div>
